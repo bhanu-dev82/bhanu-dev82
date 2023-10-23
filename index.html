@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio- Bhanu Nagpure</title>
+
+  <!--
+    - favicon
+  
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+-->
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+    
+        <figure class="avatar-box">
+          <img src="./assets/images/Bhanu.jpeg" alt="Bhanu Nagpure" width="80">
+        </figure>
+    
+        <div class="info-content">
+          <h1 class="name" title="Bhanu Nagpure">Bhanu Nagpure</h1>
+          <p class="title">CSE || Bio Medical || Youtuber</p>
+        </div>
+    
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+    
+      </div>
+    
+      <div class="sidebar-info_more">
+    
+        <div class="separator"></div>
+    
+        <ul class="contacts-list">
+    
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:bhanu.r.nagpure.8082.com" class="contact-link">bhanu.r.nagpure.8082.com</a>
+            </div>
+          </li>
+    
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+919822107989" class="contact-link">+91 982-210-7989</a>
+            </div>
+          </li>
+    
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2001-10-18">October 18, 2001</time>
+            </div>
+          </li>
+    
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Nagpur, MH, India</address>
+            </div>
+          </li>
+    
+        </ul>
+    
+        <div class="separator"></div>
+    
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/Bhanu-Nagpure-a3646519a/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://twitter.com/_ridddhi__?t=D8uSpUpa-rqNS9f9-vL9qg&s=09" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://instagram.com/_rid.dhi__?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/bhanu-dev82" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://scholar.google.com/citations?user=7LYHB5UAAAAJ&hl=en" class="social-link">
+              <ion-icon name="logo-google-scholar"></ion-icon>
+            </a>
+          </li>
+
+          <!-- Add more social items similarly -->
+        </ul>
+    
+      </div>
+    
+    </aside>
+    
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!-- #ABOUT -->
+
+<article class="about active" data-page="about">
+  <header>
+    <h2 class="h2 article-title">About me</h2>
+  </header>
+  <h3 class="h3 service-title">Who am I?</h3>
+  <section class="about-text">
+    <p>
+      Hi, I'm Bhanu Nagpure, a Computer Science and Engineering student at G. H. Raisoni College of Engineering in Nagpur, MH, India. My passion lies in crafting artificial intelligence software by harnessing the power of machine learning and deep learning technologies. With a diverse skill set that includes working with Convolutional Neural Networks (CNNs), bidirectional LSTMs, and cutting-edge architectures like MobileNets and Inception V3, I have successfully undertaken a variety of projects.
+    </p>
+
+    <p>
+      My unwavering interest and boundless enthusiasm for artificial intelligence propel me to delve deeper into its intricate concepts. My ultimate goal is to augment my productivity as an engineer who comprehends the inner workings of machines and applies this knowledge to create superior experiences across various industries.
+    </p>
+  </section>
+
+  <!-- service -->
+
+  <section class="service">
+    <h3 class="h3 service-title">Services</h3>
+    <ul class="service-list">
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-design.svg" alt="Design Icon" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Deep Learning</h4>
+          <p class="service-item-text">
+            Specializing in deep learning techniques and neural networks for AI applications.
+          </p>
+        </div>
+      </li>
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-app.svg" alt="Mobile App Icon" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Computer Vision</h4>
+          <p class="service-item-text">
+            Proficient in computer vision for image analysis and object recognition.
+          </p>
+        </div>
+      </li>
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-photo.svg" alt="Camera Icon" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Data Science</h4>
+          <p class="service-item-text">
+            Skilled in data analysis and machine learning for data-driven insights.
+          </p>
+        </div>
+      </li>
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-dev.svg" alt="Web Development Icon" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Web Development</h4>
+          <p class="service-item-text">
+            Proficient in web development to create interactive and responsive web applications.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</article>
+
+
+
+        <!--
+          - testimonials
+        
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+      </article>
+-->
+
+<!--
+#TECHNICAL SKILLS
+-->
+
+<article class="skills" data-page="skills">
+
+  <header>
+    <h2 class="h2 article-title">Skills</h2>
+  </header>
+
+  <section class="skill">
+    <h3 class="h3 skills-title">Technical Skills</h3>
+    <div class="skills-columns">
+      <div class="skills-column">
+        <ul class="skills-list content-card">
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Computer Vision</h5>
+              <data value="90">90%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+          </li>
+          <!-- Add more skills here in the first column -->
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Machine Learning</h5>
+              <data value="94">94%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 94%;"></div>
+            </div>
+          </li>
+          <!-- Add more skills here in the first column -->
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Deep Learning</h5>
+              <data value="95">95%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 95%;"></div>
+            </div>
+          </li>
+          <!-- Add more skills here in the first column -->
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Signal Processing</h5>
+              <data value="75">75%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 75%;"></div>
+            </div>
+          </li>
+          <!-- Add more skills here in the first column -->
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Database</h5>
+              <data value="78">78%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 78%;"></div>
+            </div>
+          </li>
+          <!-- Add more skills here in the first column -->
+        </ul>
+      </div>
+
+      <!-- Add another skills column here -->
+      <div class="skills-column">
+        <ul class="skills-list content-card">
+          <!-- Add more skills here in the second column -->
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">MATLAB</h5>
+              <data value="85">85%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 85%;"></div>
+            </div>
+          </li>
+          <!-- Add more skills here in the second column -->
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Microsoft Azure</h5>
+              <data value="80">80%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 80%;"></div>
+            </div>
+          </li>
+          <!-- Add more skills here in the second column -->
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Data Science</h5>
+              <data value="88">88%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+          </li>
+          <!-- Add more skills here in the second column -->
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Natural Language Processing</h5>
+              <data value="92">92%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 92%;"></div>
+            </div>
+          </li>
+          <!-- Add more skills here in the second column -->
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Web Development</h5>
+              <data value="88">88%</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+          </li>
+          <!-- Add more skills here in the second column -->
+        </ul>
+      </div>
+    </div>
+  </section>
+</article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+         
+
+          </div>
+
+        </section>
+
+      </article>
+
+<!-- #EDUCATION-->
+
+<article class="education" data-page="education">
+
+  <header>
+    <h2 class="h2 article-title">Education</h2>
+  </header>
+
+  <section class="education-details">
+    <div class="education-item">
+      <section class="timeline">
+      
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+      
+            <h3 class="h3">Education</h3>
+          </div>
+      
+          <ol class="timeline-list">
+      
+            <li class="timeline-item">
+      
+              <h4 class="h4 timeline-item-title">G. H. Raisoni College of Engineering</h4>
+      
+              <span>August’2019 — June’2023</span>
+      
+              <p class="timeline-text">
+                Bachelor of Technology (Major: Artificial Intelligence)<br>
+                CGPA: 8.62/10<br>
+                Thesis: Developing an Image Captioning System with a Text-to-Speech Module for Improved Accessibility for the Visually Impaired.
+              </p>
+      
+            </li>
+      
+          </ol>
+      
+        </section>
+    </div>
+  </section>
+
+</article>
+
+            <!--
+  - EXPERIENCE
+-->
+
+<article class="experience" data-page="experience">
+
+  <header>
+    <h2 class="h2 article-title">Experience</h2>
+  </header>
+
+  <section class="experience-details">
+    <div class="experience-item">
+      <section class="timeline">
+      
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="flask-outline"></ion-icon>
+          </div>
+      
+          <h3 class="h3">Research Experience</h3>
+        </div>
+      
+        <ol class="timeline-list">
+      
+          <li class="timeline-item">
+      
+            <h4 class="h4 timeline-item-title">Biomedical Engineering & Technology Innovation Centre, BETiC-GHRCE </h4>
+      
+            <span>July’2023 — Present</span>
+      
+            <p class="timeline-text">
+              Biotechnology Industry Research Assistance Council Junior Research Fellow<br>
+              Title: Smart Web based application for Dental Disease Detection using Artificial Intelligence<br>
+              - Conducting critical literature survey to establish a fundamental understanding of deep learning and computer vision in dental disease detection<br>
+              - Utilizing deep learning algorithms and computer vision techniques to design and implement the dental disease detection application
+            </p>
+      
+          </li>
+      
+          <li class="timeline-item">
+      
+            <h4 class="h4 timeline-item-title">University of Northern British Columbia</h4>
+      
+            <span>July’2022 — September’2022</span>
+      
+            <p class="timeline-text">
+              MITACS Globalink Research Intern<br>
+              Title: Ground Reaction Force Estimation Based on Computer Vision using Azure Kinect<br>
+              - Conducted an extensive literature survey to gain a comprehensive understanding of existing methodologies and techniques related to ground reaction force estimation and computer vision.<br>
+              - Accomplished human body detection. Assisted in developing human detection algorithms using the Microsoft Kinect DK camera.
+            </p>
+      
+          </li>
+
+          <li class="timeline-item">
+      
+            <h4 class="h4 timeline-item-title">University of Northern British Columbia</h4>
+      
+            <span>December’2022 — May’2023</span>
+      
+            <p class="timeline-text">
+              Research Intern<br>
+              - Joined the lab with a focus on developing and implementing a novel technique for measuring ground reaction force during human walking and jumping<br>
+              - Successfully completed the research project by conducting thorough experimentation and data analysis, and optimize the technique, ensuring accurate and reliable measurements
+            </p>
+      
+          </li>
+      
+        </ol>
+      
+      </section>
+    </div>
+  </section>
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Additional Work</h3>
+    </div>
+  
+    <ol class="timeline-list">
+  
+      <!-- Add the new work experience items here -->
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Microsoft Student Learn Ambassador India Beta Milestone</h4>
+        <span>Jan. 2021 - Present</span>
+        <p class="timeline-text">
+          Actively engaged as a Microsoft Student Learn Ambassador, organizing workshops, webinars, and events to promote technological learning and innovation. Provided guidance and support to students in navigating Microsoft technologies and resources.
+        </p>
+      </li>
+  
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Millennium Campus Network</h4>
+        <span>Oct. 2021 – Dec. 2021</span>
+        <p class="timeline-text">
+          Collaborated with the Millennium Campus Network to drive social impact initiatives, actively participating in planning and organizing events centered around community development, sustainability, and social justice. Engaged with a diverse group of students and community members, working together to raise awareness and take action on pressing global issues.
+        </p>
+      </li>
+  
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">IEEE SBC GHRCS India Volunteer</h4>
+        <span>Jan. 2020 - Oct. 2021</span>
+        <p class="timeline-text">
+          Contributed to fostering technological advancement by organizing technical workshops, seminars, and conferences to promote knowledge sharing and skill development. Engaged with fellow IEEE members to collaborate on impactful projects aimed at creating a positive influence in the field of technology.
+        </p>
+      </li>
+      
+      <!-- End of new work experience items -->
+  
+    </ol>
+  
+  </section>
+  
+
+</article>
+<!-- Publications Section -->
+<article class="publications" data-page="publications">
+
+  <header>
+    <h2 class="h2 article-title">Publications</h2>
+  </header>
+
+  <section class="publications-details">
+    <div class="publications-item">
+      <section class="timeline">
+      
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+      
+          <h3 class="h3">Research Publications</h3>
+        </div>
+      
+        <ol class="timeline-list">
+      
+          <li class="timeline-item">
+      
+            <h4 class="h4 timeline-item-title">Comparative Analysis for Improving Accuracy of Image Classification using Deep learning Architecture</h4>
+      
+            <span>4th International Conference on Innovative Computing and Communication (ICICC-2021)</span>
+      
+            <p class="timeline-text">
+              Authors: Gopal Sakarkar, Ketan Paithankar, Prateek Dutta, Gaurav Patil, Shivam, Ruchi Chaturvedi, Akshita Bhimarapu & <mark>Bhanu Nagpure</mark><br>
+              <a href="https://link.springer.com/chapter/10.1007/978-981-16-2597-8_22#citeas">Paper Link</a>
+            </p>
+      
+          </li>
+      
+          <li class="timeline-item">
+      
+            <h4 class="h4 timeline-item-title">Energy Efficient Data Transmission in Wireless sensor network using cross site leaping algorithm</h4>
+      
+            <span>International Conference on Computational Intelligence and Computing Applications-21 (ICCICA-21)</span>
+      
+            <p class="timeline-text">
+              Authors: Sathish Kumar Penchala, Prateek Dutta, <mark>Bhanu Nagpure</mark>, Pragati Bhat, Durva Akre, Nikita Mate<br>
+              <a href="https://aip.scitation.org/doi/abs/10.1063/5.0076799">Paper Link</a>
+            </p>
+      
+          </li>
+
+          <li class="timeline-item">
+      
+            <h4 class="h4 timeline-item-title">An Advance Approach toward Sentiment Analysis using Swarm Intelligence</h4>
+      
+            <span>International Journal for Research in Applied Science & Engineering Technology, Volume:09/Issue:05, 2021. Page: 1710-1713</span>
+      
+            <p class="timeline-text">
+              Authors: <mark>Bhanu Nagpure</mark>, Prateek Dutta<br>
+              <a href="https://scholar.google.com/scholar?oi=bibs&cluster=3840925484152354436&btnI=1&hl=en">Paper Link</a>
+            </p>
+      
+          </li>
+
+          <li class="timeline-item">
+      
+            <h4 class="h4 timeline-item-title">The Computational Approach for Human Face Mask Detection</h4>
+      
+            <span>International Research Journal of Engineering and Technology, Volume-08/Issue-06, 2021. Page: 1131-1135</span>
+      
+            <p class="timeline-text">
+              Authors: Prateek Dutta, <mark>Bhanu Nagpure</mark><br>
+              <a href="https://www.academia.edu/download/68644056/IRJET_V8I6206.pdf">Paper Link</a>
+            </p>
+      
+          </li>
+
+          <li class="timeline-item">
+      
+            <h4 class="h4 timeline-item-title">An Advance Approach toward Sentiment Analysis using Quantum AI</h4>
+      
+            <span>International Research Journal of Engineering and Technology, Volume-08/Issue-06, 2021. Page:2331-2335</span>
+      
+            <p class="timeline-text">
+              Authors: <mark>Bhanu Nagpure</mark>, Pragati Bhat<br>
+              <a href="https://www.academia.edu/download/68707752/IRJET_V8I6416.pdf">Paper Link</a>
+            </p>
+      
+          </li>
+      
+        </ol>
+      
+      </section>
+    </div>
+  </section>
+
+  <!-- Patents Section -->
+  <section class="timeline">
+    <div class="patents-item">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Patents</h3>
+    </div>
+
+    <ol class="timeline-list patents-list">
+
+      <li class="timeline-item patents-item">
+        <h4 class="h4 timeline-item-title">Social Distancing Device</h4>
+        <span>Patent Details</span>
+        <p class="timeline-text">
+          Developed lightweight, user-friendly, and cost-efficient solution for maintaining safe distances between individuals during pandemics. Utilized advanced proximity sensors and cutting-edge technology. Implemented in diverse settings, enhancing public health and safety. Recognized for innovation and problem-solving abilities.
+        </p>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- Awards Section -->
+  <section class="timeline awards">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Awards</h3>
+    </div>
+    <ol class="timeline-list awards-list">
+
+      <li class="timeline-item awards-item">
+        <h4 class="h4 timeline-item-title awards-title">MITACS Globalink Research Internship</h4>
+        <span>Award Details</span>
+        <p class="timeline-text awards-details">
+          Received the MITACS Globalink Research Internship at the University of Northern British Columbia (Prince George, BC, Canada) for the topic of “Ground Reaction Force Estimation Based on Computer Vision using Azure Kinect” under the guidance of Dr. Jianhui Zhou.
+        </p>
+      </li>
+
+    </ol>
+  </section>
+</article>
+      
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+         <form id="feedback-form" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="feedback" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+          
+          <div id="success-message" style="display: none; padding-top: 20px; color: white;">
+            Form submitted successfully! Thank you for your feedback.
+          </div>
+          
+          <script>
+            document.getElementById('feedback-form').addEventListener('submit', function (e) {
+              e.preventDefault();
+              var formData = new FormData(this);
+              fetch('https://script.google.com/macros/s/AKfycbzEMnVRajzv2vAXvg81q0p3gj9blEPBhu2GF4BMC5b-NwU0VxUO-hxvqewPBgWNQDw/exec', {
+                method: 'POST',
+                body: JSON.stringify(Object.fromEntries(formData.entries())),
+              })
+              .then(response => response.text())
+              .then(data => {
+                console.log(data); // Response from the script (optional)
+                
+                // Display success message
+                var successMessage = document.getElementById('success-message');
+                successMessage.style.display = 'block';
+                
+                // You can optionally reset the form
+                document.getElementById('feedback-form').reset();
+              })
+              .catch(error => {
+                console.error('Error:', error);
+              });
+            });
+          </script>
+        </section>
+        
+      
+      </article>
+      
+      </div>
+      
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
