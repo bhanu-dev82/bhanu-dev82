@@ -35,7 +35,7 @@
 <h3 align="center">Connect with me:</h3>
 <p align="center">
 <a href="https://twitter.com/BhanuNagpure82" target="_blank"><img align="center" src="https://img.icons8.com/office/40/000000/twitter.png" alt="NimishKashyap03" height="50" width="50" /></a> &nbsp;&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/bhanu-nagpure-294190223/" target="_blank"><img align="center" src="https://img.icons8.com/office/40/000000/linkedin.png" alt="www.linkedin.com/in/nimish-kashyap" height="50" width="50" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/bhanunagpure" target="_blank"><img align="center" src="https://img.icons8.com/office/40/000000/linkedin.png" alt="www.linkedin.com/in/nimish-kashyap" height="50" width="50" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 <!---
 bhanu-dev82/bhanu-dev82 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
