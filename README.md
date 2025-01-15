@@ -50,7 +50,7 @@ Passionate about creating socially impactful, user-friendly solutions and poised
 <h3 align="center">Connect with Me:</h3>  
 <p align="center">  
 <a href="mailto:bhanunagpure453@gmail.com" target="_blank"><img align="center" src="https://img.icons8.com/fluency/40/000000/gmail.png" alt="Email" height="50" width="50" /></a> &nbsp;&nbsp;&nbsp;  
-<a href="https://twitter.com/BhanuNagpure82" target="_blank"><img align="center" src="https://img.icons8.com/office/40/000000/twitter.png" alt="Twitter" height="50" width="50" /></a> &nbsp;&nbsp;&nbsp;  
-<a href="https://www.linkedin.com/in/bhanunagpure" target="_blank"><img align="center" src="https://img.icons8.com/office/40/000000/linkedin.png" alt="LinkedIn" height="50" width="50" /></a> &nbsp;&nbsp;&nbsp;  
+<a href="https://x.com/BhanuNagpure82" target="_blank"><img align="center" src="https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png&color=FFFFFF" alt="X" height="50" width="50" /></a> &nbsp;&nbsp;&nbsp;  
+<a href="https://www.linkedin.com/in/bhanunagpure" target="_blank"><img align="center" src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="LinkedIn" height="50" width="50" /></a> &nbsp;&nbsp;&nbsp;  
 <a href="https://github.com/bhanu-dev82" target="_blank"><img align="center" src="https://img.icons8.com/fluency/40/000000/github.png" alt="GitHub" height="50" width="50" /></a>  
 </p>
