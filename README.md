@@ -5,7 +5,7 @@
 <h3 align="center" style="color:yellow;">Who am I?</h3>  
 <div>
 Accomplished computer science professional with expertise in machine learning, deep learning, and IoT.  
-Developed innovative projects like **'V-Safe-Anywhere,'** an IoT-based wearable safety device for women, and the **'Smart Device for Early Screening of OSMF.'**  
+Developed innovative projects like an <strong> IoT-based wearable safety device for women</strong>, and <strong>The Smart Device for Early Screening of OSMF</strong>.
 Strong academic background and diverse research experience.  
 Proficient in problem-solving, critical thinking, and project management.  
 Passionate about creating socially impactful, user-friendly solutions and poised to drive industry-leading innovations as a future technology leader.  
