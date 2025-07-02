@@ -6,9 +6,6 @@ A final-year Computer Science student passionate about building scalable, impact
   <a href="https://github.com/bhanu-dev82">
     <img src="https://github-readme-stats.vercel.app/api?username=bhanu-dev82&show_icons=true&theme=radical&hide_border=true&count_private=true&cache_seconds=86400" alt="Bhanu's GitHub Stats" />
   </a>
-  <a href="https://github.com/bhanu-dev82">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=bhanu-dev82&theme=radical&hide_border=true&cache_seconds=86400" alt="Bhanu's GitHub Streak" />
-  </a>
 </p>
 
 <p align="center">
