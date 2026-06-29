@@ -4,9 +4,8 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,10.5pt]{article}
+\documentclass[letterpaper,10pt]{article}
 \usepackage[utf8]{inputenc}
-
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -18,7 +17,9 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage[left=0.38in,top=0.38in,right=0.38in,bottom=0.38in]{geometry}
+\usepackage[left=0.40in,top=0.35in,right=0.40in,bottom=0.35in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -32,47 +33,47 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-7pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-4pt}]
 
 \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{{#1 \vspace{-2pt}}}
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{#1} & \small #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
+  \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \small #1 & \small #2 \\
     \end{tabular*}\vspace{-6pt}
 }
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+% Both Experience and Projects share the same item list style for visual consistency
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.13in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, label=\textbullet]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+% Non-breaking patent number helper
+\newcommand{\patentnum}[1]{Pub.\,No.\,#1}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Bhanu Nagpure} \\ \vspace{3pt}
+    {\LARGE\bfseries\scshape Bhanu Nagpure} \\ \vspace{3pt}
     \small +91 982-210-7989 $|$
     \href{mailto:bhanunagpure453@gmail.com}{\underline{bhanunagpure453@gmail.com}} $|$
     \href{https://www.linkedin.com/in/bhanunagpure/}{\underline{linkedin.com/in/bhanunagpure}} $|$
@@ -81,122 +82,110 @@
     \href{https://bhanu-dev82.github.io}{\underline{Portfolio}}
 \end{center}
 
+\vspace{-4pt}
+
 %-----------SUMMARY-----------
 \section{Summary}
-\small{
-Android engineer with \textbf{2+ years of hands-on experience} building and shipping production-grade apps on Google Play. Deep expertise in \textbf{Kotlin, Jetpack Compose, and the Android SDK}, with a proven track record of architecting complex features — from on-device AI inference (LiteRT-LM) and custom camera pipelines (CameraX) to scalable MVVM+Hilt codebases and Play Store publishing.
-}
-\vspace{-5pt}
+\small{Android engineer with \textbf{2+ years} of hands-on experience building and shipping production apps on Google Play. Deep expertise in \textbf{Kotlin, Jetpack Compose, and the Android SDK}, with a proven track record across on-device AI~(LiteRT-LM), custom camera pipelines~(CameraX), MVVM+Hilt architecture, and Play Store publishing.}
+\vspace{-4pt}
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
- \resumeSubHeadingListStart
-    \item{
-     \textbf{Android}{: Kotlin, Java, Jetpack Compose (Material 3), Android SDK, MVVM/MVI, Hilt (DI), WorkManager, CameraX} \\
-     \vspace{2pt}
-     \textbf{On-Device AI}{: LiteRT-LM (TFLite runtime), Gemma 2/3, Phi 3.5 Mini, MediaPipe (FaceMesh), Google ML Kit} \\
-     \vspace{2pt}
-     \textbf{Data \& Async}{: Proto DataStore, Room, Kotlin Coroutines \& Flow, Retrofit, REST APIs} \\
-     \vspace{2pt}
-     \textbf{Firebase \& Monetization}{: Firebase (Auth, Crashlytics, Analytics), RevenueCat (IAP), Google Mobile Ads} \\
-     \vspace{2pt}
-     \textbf{Tools}{: Git, GitHub, Android Studio, Gradle (Kotlin DSL), CI/CD, Linux, Google Cloud Platform}
-    }
- \resumeSubHeadingListEnd
-
+\resumeSubHeadingListStart
+  \item\small{
+    \textbf{Android:} Kotlin, Java, Jetpack Compose (Material 3), Android SDK, MVVM/MVI, Hilt, WorkManager, CameraX \\[1pt]
+    \textbf{On-Device AI:} LiteRT-LM (TFLite runtime), Gemma 2/3, Phi 3.5 Mini, MediaPipe FaceMesh, Google ML Kit \\[1pt]
+    \textbf{Data \& Async:} Proto DataStore, Room, Kotlin Coroutines \& Flow, Retrofit, REST APIs \\[1pt]
+    \textbf{Firebase \& Monetisation:} Firebase (Auth, Crashlytics, Analytics), RevenueCat (IAP), Google AdMob \\[1pt]
+    \textbf{Tools:} Git, GitHub, Android Studio, Gradle (Kotlin DSL), CI/CD, Linux, Google Cloud Platform
+  }
+\resumeSubHeadingListEnd
+\vspace{-2pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Founder \& Lead Mobile Engineer}{Aug 2025 -- Present}
-      {Devanshu Studios}{Remote}
-      \resumeItemListStart
-        \resumeItem{Built and shipped \textbf{Chakuli — Offline AI Chatbot} (closed beta, Play Store): a \textbf{privacy-first, on-device AI assistant} running Gemma/Phi/SmolLM via \textbf{LiteRT-LM} — zero cloud calls for AI inference.}
-        \resumeItem{Engineered the full \textbf{Jetpack Compose} UI (Material 3), \textbf{Hilt DI}, \textbf{Proto DataStore}, \textbf{WorkManager} background model downloads, and a custom \textbf{CameraX} pipeline for in-app camera tools.}
-        \resumeItem{Architected and shipped \textbf{PyMaster} — a Python learning platform (Flutter, 50k+ LOC) with \textbf{Gemini AI Tutor}, RevenueCat IAP, and Firebase backend, live on Play Store.}
-      \resumeItemListEnd
+  \resumeSubheading
+    {Founder \& Lead Mobile Engineer}{Aug 2025 -- Present}
+    {Devanshu Studios}{Remote}
+    \resumeItemListStart
+      \resumeItem{Shipped \textbf{Chakuli — Offline AI Chatbot} (Play Store closed beta): privacy-first Android assistant running Gemma~2/3, Phi~3.5~Mini, and SmolLM entirely on-device via \textbf{LiteRT-LM} — zero cloud calls for AI inference.}
+      \resumeItem{Built full \textbf{Jetpack Compose} (Material~3) UI, \textbf{Hilt} DI, \textbf{Proto DataStore}, \textbf{WorkManager} background model downloads, custom \textbf{CameraX} pipeline, Agent Skills system, and encrypted key storage.}
+      \resumeItem{Architected and shipped \textbf{PyMaster} — Flutter Python learning platform (50k+ LOC) with Gemini AI Tutor, RevenueCat IAP, and Firebase backend, live on Play Store.}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Software Developer Intern}{Oct 2022 -- May 2024}
-      {BETIC-GHRCE}{Nagpur, India}
-      \resumeItemListStart
-        \resumeItem{Built an \textbf{Android (Kotlin/Java)} app for TMJ disorder screening, integrating \textbf{MediaPipe FaceMesh API} and \textbf{Google ML Kit} camera processing, improving diagnostic classification accuracy by \textbf{60\%}.}
-        \resumeItem{Boosted camera performance by \textbf{30\%} via optimised ML Kit integration, enabling real-time facial landmark detection for clinical use — resulted in a filed patent (Pub. No. 202321022476).}
-      \resumeItemListEnd
+  \resumeSubheading
+    {Software Developer Intern}{Oct 2022 -- May 2024}
+    {BETIC-GHRCE}{Nagpur, India}
+    \resumeItemListStart
+      \resumeItem{Built an \textbf{Android (Kotlin/Java)} app for TMJ disorder screening integrating \textbf{MediaPipe FaceMesh} and \textbf{Google ML Kit}, improving diagnostic classification accuracy by \textbf{60\%}.}
+      \resumeItem{Boosted camera performance by \textbf{30\%} via optimised ML Kit integration enabling real-time facial landmark detection — contributed to a filed patent (\patentnum{202321022476}).}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Open Source Contributor}{Feb 2025 -- Present}
-      {Wikimedia Foundation (Scribe-Android)}{Remote}
-      \resumeItemListStart
-        \resumeItem{Developed tablet-specific keyboard layouts in \textbf{Kotlin} for the Scribe-Android app, covering 7+ languages (German, French, Spanish).}
-        \resumeItem{Resolved critical UI bugs related to theme consistency and animations; refactored the \textbf{KeyHandler} module for improved maintainability.}
-      \resumeItemListEnd
+  \resumeSubheading
+    {Open Source Contributor}{Feb 2025 -- Present}
+    {Wikimedia Foundation (Scribe-Android)}{Remote}
+    \resumeItemListStart
+      \resumeItem{Developed tablet-specific keyboard layouts in \textbf{Kotlin} for 7+ languages; resolved UI bugs and refactored the \textbf{KeyHandler} module for improved maintainability.}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Machine Learning Intern}{Aug 2024 -- Oct 2024}
-      {Athabasca University}{Athabasca, AB, Canada}
-      \resumeItemListStart
-        \resumeItem{Delivered \textbf{95\% prediction accuracy} for a text ideology identification model using Transformers/BERT; built a prototype web interface for researcher access.}
-      \resumeItemListEnd
+  \resumeSubheading
+    {Research Internships}{Apr 2024 -- Oct 2024}
+    {Mitacs (Canada) \& Athabasca University}{Edmonton / Athabasca, AB, Canada}
+    \resumeItemListStart
+      \resumeItem{Mitacs Globalink: Led Flutter cross-platform (iOS, Android, Web) field-trip app development; presented at the 3rd Annual TRESL Lab Symposium, Canada.}
+      \resumeItem{Athabasca University: Delivered \textbf{95\% accuracy} text ideology model (Transformers/BERT); built prototype researcher web interface.}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Globalink Research Intern}{Apr 2024 -- Aug 2024}
-      {Mitacs}{Edmonton, AB, Canada}
-      \resumeItemListStart
-        \resumeItem{Led full-stack development of a cross-platform (iOS, Android, Web) field-trip application using Flutter, Firebase, and OpenStreetMaps; presented at the 3rd Annual TRESL Lab Symposium, Canada.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
+\resumeSubHeadingListEnd
+\vspace{-2pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-      \resumeProjectHeading
-          {\textbf{Chakuli — Offline AI Chatbot} $|$ \emph{Kotlin, Jetpack Compose, LiteRT-LM, Hilt, CameraX}}{Aug 2025 -- Present}
-          \resumeItemListStart
-            \resumeItem{Privacy-first Android AI assistant running \textbf{Gemma 2/3, Phi 3.5 Mini, SmolLM} entirely on-device via \textbf{LiteRT-LM} — no internet required for AI inference, ensuring complete data privacy.}
-            \resumeItem{Built Agent Skills system, encrypted secure storage (EncryptedSharedPreferences), foreground WorkManager service for large model downloads, and Protobuf DataStore for conversation persistence.}
-          \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Chakuli — Offline AI Chatbot} $|$ \emph{Kotlin, Jetpack Compose, LiteRT-LM, Hilt, CameraX}}{Aug 2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{On-device Android AI assistant running \textbf{Gemma~2/3, Phi~3.5~Mini, SmolLM} via \textbf{LiteRT-LM} — no internet for inference, full data privacy.}
+      \resumeItem{Agent Skills system, encrypted storage (EncryptedSharedPreferences), foreground WorkManager for model downloads, Protobuf DataStore for conversation persistence.}
+    \resumeItemListEnd
 
-      \resumeProjectHeading
-          {\textbf{OCanPredict — OSMF Screening App} $|$ \emph{Kotlin, Java, MediaPipe FaceMesh, Firebase}}{Dec 2022 -- Jul 2023}
-          \resumeItemListStart
-            \resumeItem{Android app for a biomedical device that aids Oral Submucous Fibrosis diagnosis using \textbf{MediaPipe FaceMesh API} for real-time facial analysis, increasing diagnostic efficiency by \textbf{40\%}.}
-            \resumeItem{Won multiple national and state-level awards; contributed to BETIC-GHRCE's patent filing (Pub. No. 202321022476, Mar 2023).}
-          \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{OCanPredict — OSMF Screening App} $|$ \emph{Kotlin, Java, MediaPipe FaceMesh, Firebase}}{Dec 2022 -- Jul 2023}
+    \resumeItemListStart
+      \resumeItem{Android diagnostic app using \textbf{MediaPipe FaceMesh} for real-time OSMF screening, boosting efficiency by \textbf{40\%}; won multiple national awards and contributed to granted patent (\patentnum{202321022476}).}
+    \resumeItemListEnd
 
-      \resumeProjectHeading
-          {\textbf{Autonomous Garbage Collection Robot} $|$ \emph{Python, YOLOv5, Computer Vision}}{Jun 2023 -- Sep 2023}
-          \resumeItemListStart
-            \resumeItem{Computer vision system (YOLOv5) for autonomous floating waste detection and retrieval, reducing manual collection effort by \textbf{60\%}. Published at \href{https://dl.acm.org/doi/10.1145/3693939.3693957}{\underline{8th ICACS 2024, Hong Kong}}.}
-          \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Autonomous Garbage Collection Robot} $|$ \emph{Python, YOLOv5, Computer Vision}}{Jun 2023 -- Sep 2023}
+    \resumeItemListStart
+      \resumeItem{Computer vision system (YOLOv5) for autonomous floating waste detection, reducing manual effort by \textbf{60\%}. Published at \href{https://dl.acm.org/doi/10.1145/3693939.3693957}{\underline{8th ICACS 2024, ACM, Hong Kong}}.}
+    \resumeItemListEnd
 
-    \resumeSubHeadingListEnd
-
+\resumeSubHeadingListEnd
+\vspace{-2pt}
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {G H Raisoni College of Engineering}{Nagpur, India}
-      {Bachelor of Technology, Computer Science \& Engineering $|$ CGPA: 8.7/10.0}{Dec 2021 -- Jun 2025}
-  \resumeSubHeadingListEnd
-
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {G H Raisoni College of Engineering}{Nagpur, India}
+    {B.Tech, Computer Science \& Engineering $|$ CGPA: 8.7/10.0}{Dec 2021 -- Jun 2025}
+\resumeSubHeadingListEnd
+\vspace{-2pt}
 
 %-----------AWARDS \& PUBLICATIONS-----------
 \section{Awards, Publications \& Patents}
- \resumeSubHeadingListStart
-    \item{\small
-     \textbf{Awards:} Third Place --- Avishkar 2024; Runner-up --- DIPEX 2023 \& SHRISTI 2023; BIREC E-YUVA Grant (Rs.~10 lakh, 2023); Winner --- MEDHA \& MEDIC-2022. \newline
-     \textbf{Publications:} ``Autonomous Floating Garbage Collection.'' \textit{ACM ICACS 2024}. \href{https://dl.acm.org/doi/10.1145/3693939.3693957}{\underline{[Link]}} \quad ``V-Safe-Anywhere.'' \textit{IGI Global, 2024}. \href{https://www.igi-global.com/chapter/v-safe-anywhere/342150}{\underline{[Link]}} \newline
-     \textbf{Patent (Granted):} Smart Chairside TMJ Examination Tool. (No. 202321022476, 2023) \newline
-     \textbf{Patent (Published, Pending Grant):} AI Based Portable Device for Dental Disease Detection. (No. 202421006731, Filed 2024, Published Aug 2025)
-    }
- \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \item\small{
+    \textbf{Awards:} 3rd Place --- Avishkar~2024; Runner-up --- DIPEX~2023 \& SHRISTI~2023; BIREC E-YUVA Grant (Rs.\,10~lakh, 2023); Winner --- MEDHA \& MEDIC-2022. \\[1pt]
+    \textbf{Publication:} ``Autonomous Floating Garbage Collection Device using CV and Robotics.'' \textit{8th ICACS 2024, ACM}. \href{https://dl.acm.org/doi/10.1145/3693939.3693957}{\underline{[Link]}} \\[1pt]
+    \textbf{Publication:} ``V-Safe-Anywhere: Empowering Women's Safety with Wearable AI and IoT.'' \textit{IGI Global}, Mar~2024. \href{https://www.igi-global.com/chapter/v-safe-anywhere/342150}{\underline{[Link]}} \\[1pt]
+    \textbf{Patent:} Smart Chairside TMJ Examination and Muscle Activity Detector Tool. (\patentnum{202321022476}, Mar~2023 --- Granted.) \\[1pt]
+    \textbf{Medium:} Technical blogger on indie Android/Flutter dev --- \href{https://medium.com/@bhanu.r.nagpure.8082}{\underline{medium.com/@bhanu.r.nagpure.8082}}
+  }
+\resumeSubHeadingListEnd
 
-%-------------------------------------------
 \end{document}

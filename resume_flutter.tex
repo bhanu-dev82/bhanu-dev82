@@ -4,9 +4,8 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,10.5pt]{article}
+\documentclass[letterpaper,10pt]{article}
 \usepackage[utf8]{inputenc}
-
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -18,7 +17,9 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage[left=0.38in,top=0.38in,right=0.38in,bottom=0.38in]{geometry}
+\usepackage[left=0.40in,top=0.35in,right=0.40in,bottom=0.35in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -32,47 +33,43 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-7pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-4pt}]
 
 \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{{#1 \vspace{-2pt}}}
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{#1} & \small #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
+  \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \small #1 & \small #2 \\
     \end{tabular*}\vspace{-6pt}
 }
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.13in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Bhanu Nagpure} \\ \vspace{3pt}
+    {\LARGE\bfseries\scshape Bhanu Nagpure} \\ \vspace{3pt}
     \small +91 982-210-7989 $|$
     \href{mailto:bhanunagpure453@gmail.com}{\underline{bhanunagpure453@gmail.com}} $|$
     \href{https://www.linkedin.com/in/bhanunagpure/}{\underline{linkedin.com/in/bhanunagpure}} $|$
@@ -81,116 +78,111 @@
     \href{https://bhanu-dev82.github.io}{\underline{Portfolio}}
 \end{center}
 
+\vspace{-4pt}
+
 %-----------SUMMARY-----------
 \section{Summary}
 \small{
-Flutter engineer with \textbf{2+ years of end-to-end product experience}, having independently designed, built, and shipped \textbf{2 apps to Google Play}. Expert in \textbf{Flutter, Dart, Riverpod 2.0, and Clean Architecture}, with deep cross-platform (iOS, Android, Web) experience and a strong command of Firebase, RevenueCat, and production-grade app architecture.
+Flutter engineer with \textbf{2+ years of end-to-end product experience}, having independently designed, built, and shipped \textbf{2 apps to Google Play}. Expert in \textbf{Flutter, Dart, Riverpod 2.0, and Clean Architecture}, with deep cross-platform (iOS, Android, Web) experience and strong command of Firebase, RevenueCat, and production-grade app architecture.
 }
-\vspace{-5pt}
+\vspace{-4pt}
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
- \resumeSubHeadingListStart
-    \item{
-     \textbf{Flutter \& Dart}{: Flutter SDK, Dart, Riverpod 2.0, BLoC/Cubit, Clean Architecture, Flutter Flavors, go\_router} \\
-     \vspace{2pt}
-     \textbf{Cross-Platform}{: iOS, Android, Web — single codebase; platform channels; native integrations} \\
-     \vspace{2pt}
-     \textbf{Backend \& Data}{: Firebase (Auth, Firestore, Storage, Crashlytics), REST APIs, OpenStreetMaps, Hive} \\
-     \vspace{2pt}
-     \textbf{Monetization \& AI}{: RevenueCat (IAP/subscriptions), Google Mobile Ads (AdMob/mediation), Gemini LLM (on-device)} \\
-     \vspace{2pt}
-     \textbf{Languages}{: Dart, Kotlin, Python, Java, SQL} \\
-     \vspace{2pt}
-     \textbf{Tools}{: Git, GitHub, Android Studio, Xcode, Gradle (Kotlin DSL), CI/CD, Google Cloud Platform, Linux}
-    }
- \resumeSubHeadingListEnd
-
+\resumeSubHeadingListStart
+  \item\small{
+    \textbf{Flutter \& Dart:} Flutter SDK, Dart, Riverpod 2.0, BLoC/Cubit, Clean Architecture, Flutter Flavors, go\_router \\[1pt]
+    \textbf{Cross-Platform:} iOS, Android, Web — single codebase; platform channels; native integrations \\[1pt]
+    \textbf{Backend \& Data:} Firebase (Auth, Firestore, Storage, Crashlytics), REST APIs, OpenStreetMaps, Hive \\[1pt]
+    \textbf{Monetisation \& AI:} RevenueCat (IAP/subscriptions), Google AdMob (mediation), Gemini LLM (on-device) \\[1pt]
+    \textbf{Languages:} Dart, Kotlin, Python, Java, SQL \\[1pt]
+    \textbf{Tools:} Git, GitHub, Android Studio, Xcode, Gradle (Kotlin DSL), CI/CD, Google Cloud Platform, Linux
+  }
+\resumeSubHeadingListEnd
+\vspace{-2pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Founder \& Lead Flutter Engineer}{Aug 2025 -- Present}
-      {Devanshu Studios}{Remote}
-      \resumeItemListStart
-        \resumeItem{Independently architected and shipped \textbf{PyMaster} (\href{https://play.google.com/store/apps/details?id=com.devanshustudios.pymaster}{\underline{Live on Play Store}}) — a \textbf{50k+ LOC Flutter} Python learning platform with Clean Architecture, \textbf{Riverpod 2.0}, and Flutter Flavors for dev/prod environments.}
-        \resumeItem{Integrated \textbf{Gemini LLM} as a Native AI Tutor; built an \textbf{offline-first sync engine} using Riverpod + Hive to batch-queue user progress and upload to Firebase on reconnect — ensuring zero data loss.}
-        \resumeItem{Implemented full \textbf{monetization stack}: RevenueCat (subscriptions \& IAP), Google AdMob with native ad mediation, and Firebase Google Sign-In — managing the entire app lifecycle from code to Play Console.}
-        \resumeItem{Wrote technical postmortems on Medium, including \textit{``I Didn't Stress Test My Native Ads. My App Paid the Price.''} and \textit{``Why I Stopped Building Apps and Started Building an Engine in Flutter.''}}
-      \resumeItemListEnd
+  \resumeSubheading
+    {Founder \& Lead Flutter Engineer}{Aug 2025 -- Present}
+    {Devanshu Studios}{Remote}
+    \resumeItemListStart
+      \resumeItem{Architected and shipped \textbf{PyMaster} (\href{https://play.google.com/store/apps/details?id=com.devanshustudios.pymaster}{\underline{Live on Play Store}}) — a \textbf{50k+ LOC Flutter} Python learning platform with Clean Architecture, \textbf{Riverpod 2.0}, and Flutter Flavors for dev/staging/prod environments.}
+      \resumeItem{Integrated \textbf{Gemini LLM} as a Native AI Tutor; built an \textbf{offline-first sync engine} (Riverpod + Hive) to batch-queue progress and upload to Firebase on reconnect — zero data loss.}
+      \resumeItem{Implemented full \textbf{monetisation stack}: RevenueCat (subscriptions \& IAP), Google AdMob native ad mediation, Firebase Google Sign-In — managed entire lifecycle from code to Play Console.}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Globalink Research Intern}{Apr 2024 -- Aug 2024}
-      {Mitacs}{Edmonton, AB, Canada}
-      \resumeItemListStart
-        \resumeItem{Led end-to-end development of a \textbf{cross-platform (iOS, Android, Web)} mobile field-trip application using \textbf{Flutter}, \textbf{Firebase} (Auth, Firestore, Storage), and \textbf{OpenStreetMaps} integration.}
-        \resumeItem{Handled UI/UX design, frontend, and backend implementation; authored comprehensive technical documentation and presented research findings at the \textbf{3rd Annual TRESL Lab International Symposium}, Athabasca, Canada.}
-      \resumeItemListEnd
+  \resumeSubheading
+    {Globalink Research Intern}{Apr 2024 -- Aug 2024}
+    {Mitacs}{Edmonton, AB, Canada}
+    \resumeItemListStart
+      \resumeItem{Led end-to-end development of a \textbf{cross-platform (iOS, Android, Web)} field-trip app using \textbf{Flutter}, Firebase (Auth, Firestore, Storage), and \textbf{OpenStreetMaps}; presented at the \textbf{3rd Annual TRESL Lab Symposium}, Canada.}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Open Source Contributor}{Feb 2025 -- Present}
-      {Wikimedia Foundation (Scribe-Android)}{Remote}
-      \resumeItemListStart
-        \resumeItem{Developed tablet-specific keyboard layouts (Kotlin) for 7+ languages; resolved UI bugs and refactored the KeyHandler module for better maintainability and test coverage.}
-      \resumeItemListEnd
+  \resumeSubheading
+    {Open Source Contributor}{Feb 2025 -- Present}
+    {Wikimedia Foundation (Scribe-Android)}{Remote}
+    \resumeItemListStart
+      \resumeItem{Developed tablet-specific keyboard layouts (Kotlin) for 7+ languages; resolved UI bugs and refactored the KeyHandler module for maintainability and test coverage.}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Machine Learning Intern}{Aug 2024 -- Oct 2024}
-      {Athabasca University}{Athabasca, AB, Canada}
-      \resumeItemListStart
-        \resumeItem{Delivered \textbf{95\% prediction accuracy} for a text ideology identification model using Transformers/BERT; deployed a prototype web interface enabling researchers to validate model outputs efficiently.}
-      \resumeItemListEnd
+  \resumeSubheading
+    {Machine Learning Intern}{Aug 2024 -- Oct 2024}
+    {Athabasca University}{Athabasca, AB, Canada}
+    \resumeItemListStart
+      \resumeItem{Delivered \textbf{95\% prediction accuracy} for a text ideology model (Transformers/BERT); built a prototype web interface for researcher validation.}
+    \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
-
+\resumeSubHeadingListEnd
+\vspace{-2pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-      \resumeProjectHeading
-          {\textbf{PyMaster — Learn Python Coding} $|$ \emph{Flutter, Dart, Riverpod 2.0, Firebase, RevenueCat, Gemini AI}}{Aug 2025 -- Present}
-          \resumeItemListStart
-            \resumeItem{Production-grade Flutter app on Google Play: 1,200+ interactive exercises, gamified league system, and a \textbf{Gemini-powered AI Tutor} for context-aware debugging help, processed locally for privacy and speed.}
-            \resumeItem{End-to-end ownership: app architecture, state management (\textbf{Riverpod 2.0}), \textbf{Flutter Flavors} (dev/staging/prod), CI/CD pipeline, and Play Console publishing with 4.5\% crash-free sessions.}
-          \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{PyMaster — Learn Python Coding} $|$ \emph{Flutter, Dart, Riverpod 2.0, Firebase, RevenueCat, Gemini AI}}{Aug 2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{Production Flutter app on Google Play: 1,200+ interactive exercises, gamified league system, and a \textbf{Gemini-powered AI Tutor} for context-aware debugging — 4.5\% crash-free sessions.}
+      \resumeItem{Full ownership: Clean Architecture, \textbf{Riverpod 2.0}, Flutter Flavors, CI/CD pipeline, and Play Console publishing.}
+    \resumeItemListEnd
 
-      \resumeProjectHeading
-          {\textbf{V-Safe-Anywhere: Women's Safety Wearable} $|$ \emph{Flutter, Firebase, IoT, Google Cloud}}{Nov 2022 -- Apr 2024}
-          \resumeItemListStart
-            \resumeItem{Flutter app paired with a custom IoT wearable: when a panic button is pressed on the device, the app receives a \textbf{Bluetooth/IoT signal} and instantly broadcasts the user's \textbf{live GPS location} to pre-saved contacts via Firebase, achieving \textbf{98\% uptime}. Published by \href{https://www.igi-global.com/chapter/v-safe-anywhere/342150}{\underline{IGI Global}}.}
-          \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{V-Safe-Anywhere: Women's Safety Wearable} $|$ \emph{Flutter, Firebase, IoT, Google Cloud}}{Nov 2022 -- Apr 2024}
+    \resumeItemListStart
+      \resumeItem{Flutter app paired with a custom IoT wearable: panic button triggers instant \textbf{live GPS broadcast} to pre-saved contacts via Firebase — \textbf{98\% uptime}. Published by \href{https://www.igi-global.com/chapter/v-safe-anywhere/342150}{\underline{IGI Global}}.}
+    \resumeItemListEnd
 
-      \resumeProjectHeading
-          {\textbf{Mobile Field Trip Application} $|$ \emph{Flutter, Firebase, OpenStreetMaps}}{Apr 2024 -- Aug 2024}
-          \resumeItemListStart
-            \resumeItem{Cross-platform Flutter app (iOS, Android, Web) for academic field assignments; Firebase Auth \& Storage backend, OpenStreetMaps for location mapping. Presented at the TRESL Lab Symposium, Canada.}
-          \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Mobile Field Trip Application} $|$ \emph{Flutter, Firebase, OpenStreetMaps}}{Apr 2024 -- Aug 2024}
+    \resumeItemListStart
+      \resumeItem{Cross-platform Flutter app (iOS, Android, Web) for academic field assignments; Firebase Auth \& Storage, OpenStreetMaps integration. Presented at TRESL Lab Symposium, Canada.}
+    \resumeItemListEnd
 
-    \resumeSubHeadingListEnd
-
+\resumeSubHeadingListEnd
+\vspace{-2pt}
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {G H Raisoni College of Engineering}{Nagpur, India}
-      {Bachelor of Technology, Computer Science \& Engineering $|$ CGPA: 8.7/10.0}{Dec 2021 -- Jun 2025}
-  \resumeSubHeadingListEnd
-
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {G H Raisoni College of Engineering}{Nagpur, India}
+    {B.Tech, Computer Science \& Engineering $|$ CGPA: 8.7/10.0}{Dec 2021 -- Jun 2025}
+\resumeSubHeadingListEnd
+\vspace{-2pt}
 
 %-----------AWARDS \& PUBLICATIONS-----------
 \section{Awards, Publications \& Patents}
- \resumeSubHeadingListStart
-    \item{\small
-     \textbf{Awards:} Third Place --- Avishkar 2024; Runner-up --- DIPEX 2023 \& SHRISTI 2023; BIREC E-YUVA Grant (Rs.~10 lakh, 2023); Winner --- MEDHA \& MEDIC-2022. \newline
-     \textbf{Publications:} ``V-Safe-Anywhere: Empowering Women's Safety with Wearable AI and IoT.'' \textit{IGI Global, 2024}. \href{https://www.igi-global.com/chapter/v-safe-anywhere/342150}{\underline{[Link]}} \quad ``Autonomous Floating Garbage Collection.'' \textit{ACM ICACS 2024}. \href{https://dl.acm.org/doi/10.1145/3693939.3693957}{\underline{[Link]}} \newline
-     \textbf{Patent (Granted):} Smart Chairside TMJ Examination Tool. (No. 202321022476, 2023) \newline
-     \textbf{Patent (Published, Pending Grant):} AI Based Portable Device for Dental Disease Detection. (No. 202421006731, Filed 2024, Published Aug 2025)
-    }
- \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \item\small{
+    \textbf{Awards:} Third Place --- Avishkar 2024; Runner-up --- DIPEX 2023 \& SHRISTI 2023; BIREC E-YUVA Grant (Rs.~10 lakh, 2023); Winner --- MEDHA \& MEDIC-2022. \\[1pt]
+    \textbf{Publication:} ``V-Safe-Anywhere: Empowering Women's Safety with Wearable AI and IoT.'' \textit{IGI Global}, Mar 2024. \href{https://www.igi-global.com/chapter/v-safe-anywhere/342150}{\underline{[Link]}} \\[1pt]
+    \textbf{Publication:} ``Autonomous Floating Garbage Collection Device using CV and Robotics.'' \textit{8th ICACS 2024, ACM}. \href{https://dl.acm.org/doi/10.1145/3693939.3693957}{\underline{[Link]}} \\[1pt]
+    \textbf{Patent:} Smart Chairside TMJ Examination and Muscle Activity Detector Tool. (Pub. No. 202321022476, Mar 2023 --- Granted.) \\[1pt]
+    \textbf{Medium:} Technical blogger on indie Flutter/Android dev --- \href{https://medium.com/@bhanu.r.nagpure.8082}{\underline{medium.com/@bhanu.r.nagpure.8082}}
+  }
+\resumeSubHeadingListEnd
 
-%-------------------------------------------
 \end{document}
