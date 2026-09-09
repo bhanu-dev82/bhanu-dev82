@@ -1,28 +1,40 @@
-# Bhanu Nagpure — Mobile & On-Device AI Engineer
+# Bhanu Nagpure — AI-Native Product Engineer
 
-I build and ship Android and Flutter products, including offline-first apps and private on-device AI. **Proof:** three commercial apps, a [Mitacs](https://www.mitacs.ca/our-programs/globalink-research-internship-students/) research internship, patented work, published research, and public Android/AI engineering.
+Android · Flutter · on-device AI.
+
+I turn ambiguous ideas into tested mobile products on Google Play — including private on-device LLM apps — then own architecture, verification, and release.
 
 [Portfolio](https://bhanu-dev82.github.io/) · [LinkedIn](https://www.linkedin.com/in/bhanunagpure/) · [Google Play](https://play.google.com/store/apps/developer?id=Devanshu+Studios) · [Resume](https://bhanu-dev82.github.io/resumes/Bhanu_Nagpure_Resume.pdf) · [Email](mailto:bhanunagpure453@gmail.com)
 
-## Products shipped
+## Products
 
-| Product | What I built | Evidence |
+| Product | What I shipped | Evidence |
 | --- | --- | --- |
-| **Chakuli** | Kotlin + Jetpack Compose assistant with on-device LLM inference | [Google Play / Devanshu Studios](https://play.google.com/store/apps/developer?id=Devanshu+Studios) · [Portfolio](https://bhanu-dev82.github.io/) |
-| **PyMaster** | Flutter, offline-first Python learning product | [Google Play listing](https://play.google.com/store/apps/details?id=com.devanshustudios.pymaster) · [Portfolio](https://bhanu-dev82.github.io/) |
-| **Keepary** | Flutter document workflow with ML Kit OCR and local PDF tools; in Google Play testing | [Google Play / Devanshu Studios](https://play.google.com/store/apps/developer?id=Devanshu+Studios) · [Portfolio](https://bhanu-dev82.github.io/) |
+| **Chakuli** | Kotlin + Jetpack Compose assistant with on-device LLM inference (LiteRT-LM / GGUF) | [Play](https://play.google.com/store/apps/developer?id=Devanshu+Studios) · [Portfolio](https://bhanu-dev82.github.io/) |
+| **PyMaster** | Flutter Python-learning product, offline-first, billing, Crashlytics | [Play listing](https://play.google.com/store/apps/details?id=com.devanshustudios.pymaster) |
+| **Keepary** | Flutter document scanner: on-device OCR, local PDF tools; Play closed testing | [Play / Devanshu Studios](https://play.google.com/store/apps/developer?id=Devanshu+Studios) |
 
-The commercial app source is private; store listings and portfolio material provide product and delivery evidence. For public code, see [aegis-edge](https://github.com/bhanu-dev82/aegis-edge), [OcanPredict](https://github.com/bhanu-dev82/OcanPredict), [agentscope](https://github.com/bhanu-dev82/agentscope), and [Scribe-Android](https://github.com/bhanu-dev82/Scribe-Android).
+Commercial app source is private. Public engineering is below.
 
-## Experience & proof
+## Public proof — pin these
 
-- **Mitacs Globalink research internship, Canada** — built a cross-platform Flutter application for field research and presented the work at a research symposium.
-- **Applied research** — work spanning mobile health, computer vision, and edge AI; includes patented projects and peer-reviewed publications ([ACM paper](https://dl.acm.org/doi/10.1145/3693939.3693957), [IGI Global chapter](https://www.igi-global.com/chapter/v-safe-anywhere/342150)).
-- **Open source** — contributed Kotlin work to [Scribe-Android](https://github.com/scribe-org/Scribe-Android), an Android keyboard project for language learners.
-- **Public engineering** — Kotlin edge-AI work in [aegis-edge](https://github.com/bhanu-dev82/aegis-edge), screening research in [OcanPredict](https://github.com/bhanu-dev82/OcanPredict), and AI-agent experimentation in [agentscope](https://github.com/bhanu-dev82/agentscope).
+| Repo | Why it is here |
+| --- | --- |
+| [aegis-edge](https://github.com/bhanu-dev82/aegis-edge) | On-device Gemma 4 disaster triage on Android (weekend, inspectable) |
+| [Anvil](https://github.com/bhanu-dev82/Anvil) | Shipped multi-service PDF pipeline |
+| [Scribe-Android](https://github.com/scribe-org/Scribe-Android) | Kotlin contributions in an established Wikimedia project |
+| [HYDRA-shrinkflation-watch-](https://github.com/bhanu-dev82/HYDRA-shrinkflation-watch-) | Live collectors + self-healing extraction |
+| [bhanu-dev82.github.io](https://github.com/bhanu-dev82/bhanu-dev82.github.io) | Portfolio |
+| [rote-play-artifacts](https://github.com/bhanu-dev82/rote-play-artifacts) | Measured agent-procedure study (supporting, not the headline) |
 
-**AI-native is how I work:** I use AI deliberately across product engineering, rapid experimentation, automation, testing, and delivery—while keeping architecture, validation, privacy, and product judgment owned by the engineer.
+## How I work
 
-**Skills:** Kotlin, Jetpack Compose, Android, Flutter/Dart, on-device LLMs, LiteRT, ML Kit, MediaPipe, Firebase, Python, CI/CD.
+AI-native means I pick models and coding agents by task, then keep architecture, tests, privacy, and Play-release quality. The model is output. I own the product.
 
-Open to mobile and on-device AI engineering roles.
+## Currently
+
+- Open to remote or on-site product, Android, Flutter, and on-device AI roles.
+- Training a compact on-device model for **Chakuli** (product work, not a separate ML identity).
+- Upstream contributions to Gemma / Gemini Cookbook / LiteRT land **when a PR is merged**. Clones are study workspaces, not portfolio pieces.
+
+**Skills:** Kotlin, Jetpack Compose, Android, Flutter/Dart, on-device LLMs, LiteRT-LM, ML Kit, MediaPipe, Firebase, Python, CI/CD.
