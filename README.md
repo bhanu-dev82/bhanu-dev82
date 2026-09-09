@@ -16,7 +16,7 @@ I turn ambiguous ideas into tested mobile products on Google Play — including 
 
 Commercial app source is private. Public engineering is below.
 
-## Public proof — pin these
+## Public proof
 
 | Repo | Why it is here |
 | --- | --- |
